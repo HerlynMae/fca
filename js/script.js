@@ -7,8 +7,8 @@ faqs.forEach((faq) => {
 });
 
 
-const tabsNav = document.querySelectorAll(".faqs__info");
-const tabsContent = document.querySelectorAll("faqs__content");
+const tabsNav = document.querySelectorAll(".faqs__link");
+const tabsContent = document.querySelectorAll("faqs__question");
 tabs.forEach((tab) => {
   tab.addEventListener("click", () => {
     removeActiveFaq();
