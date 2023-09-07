@@ -744,6 +744,12 @@ img{
   align-self: center;
 }
 
+.faqs__content h5{
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
 .faqs__tab__content{
   margin-bottom: 0.75rem;
   --tw-bg-opacity: 1;
@@ -815,9 +821,14 @@ img{
 }
 
 .faqs__question.active{
-  max-width: 40rem;
+  display: block;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.faqs__link.active a{
+  --tw-text-opacity: 1;
+  color: rgb(1 133 66 / var(--tw-text-opacity));
 }
 
 .transition{

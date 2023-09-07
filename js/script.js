@@ -6,12 +6,11 @@ faqs.forEach((faq) => {
   });
 });
 
-
 const tabsNav = document.querySelectorAll(".faqs__link");
-const tabsContent = document.querySelectorAll("faqs__question");
-tabs.forEach((tab) => {
+const tabsContent = document.querySelectorAll(".faqs__question");
+tabsNav.forEach((tab) => {
   tab.addEventListener("click", () => {
-    removeActiveFaq();
+    removeActiveTab();
     tab.classList.add("active");
     const activeContent = document.querySelector(`#${tab.id}-content`);
     removeActiveContent();
@@ -26,8 +25,7 @@ function removeActiveTab() {
 }
 
 function removeActiveContent() {
-    tabsContent.forEach((tab) => {
-      tab.classList.remove("active");
-    });
-  }
-
+  tabsContent.forEach((tab) => {
+    tab.classList.remove("active");
+  });
+}
