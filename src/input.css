@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+
+  h1 {
+    @apply text-4xl mb-4;
+  }
+  h2 {
+    @apply text-xl mb-4;
+  }
+
+  body {
+    @apply font-poppins leading-6 h-[2000px];
+  }
+
+  ul {
+    @apply list-none;
+  }
+
+  a {
+    @apply decoration-0;
+  }
+
+  img {
+    @apply block;
+  }
+
+  nav.show {
+    @apply h-screen;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-[1600px] w-full px-4 mx-auto;
+  }
+
+  .header {
+    @apply py-5;
+  }
+
+  .header__wrapper {
+    @apply flex justify-between items-center border-b-[1px] border-dark;
+  }
+
+  .header img {
+    @apply h-[70px];
+  }
+
+  .header__wrapper ul {
+    @apply flex gap-6 items-center;
+  }
+
+  .header__fb {
+    @apply bg-fb py-2 px-4 rounded-lg text-light hover:bg-fbhover;
+  }
+
+  .header__faqs {
+    @apply bg-light py-2 px-4 rounded-lg text-dark hover:text-dark border-[1px] border-dark hover:bg-lightgreen;
+  }
+
+  .nav ul {
+    @apply flex gap-6 justify-center items-center;
+  }
+
+  .nav ul li {
+    @apply px-6 border-r-[1px] border-dark;
+  }
+
+  .nav ul li:last-child {
+    @apply border-r border-none bg-yellow py-2 px-4 rounded-lg text-light;
+  }
+
+  .faqs {
+    @apply py-10;
+  }
+
+  .faqs h1 {
+    @apply font-thin text-7xl text-center mt-20 mb-20;
+  }
+
+  .faqs__info{
+    @apply grid grid-cols-[_1fr,_2.5fr];
+  }
+
+  .faqs__info ul li{
+    @apply text-2xl mb-2;
+  }
+
+  .faqs__content {
+    @apply mb-2 self-center ;
+  }
+
+  .faqs__tab__content{
+    @apply mb-3 p-4  bg-gray ;
+  }
+
+  .faqs__tab__content h4{
+    @apply text-[1.2rem];
+  }
+
+  .faqs__tab__content span{
+    @apply text-green mr-3;
+  }
+
+  .faqs__tab__content i{
+    @apply float-right ease-in-out duration-[.5s];
+  }
+
+  .faqs__tab__content i:after{
+    @apply  content-['_'] w-[4rem] h-[4rem] opacity-[.4rem] ease-in-out duration-[.5s];
+  }
+
+  .faqs__tab__content i.open{
+    @apply rotate-[180deg];
+  }
+
+  .faqs__tab__content p {
+    @apply h-auto max-h-0 overflow-hidden ease-in-out duration-[.5s] ;
+  }
+
+  .faqs__tab__content p.open{
+    @apply max-h-[50rem] py-6;
+  }
+
+  .faqs__tab__content p i{
+    @apply float-left mr-4 text-green;
+  }
+
+  .faqs__tab__content a{
+    @apply text-green;
+  }
+
+  /* .faqs__question{
+    @apply hidden mx-auto;
+  }
+
+  .faqs__question.active{
+    @apply max-w-[40rem] py-3;
+  } */
+}
