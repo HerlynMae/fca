@@ -146,11 +146,11 @@
     @apply text-green;
   }
 
-  /* .faqs__question{
+  .faqs__question{
     @apply hidden mx-auto;
   }
 
   .faqs__question.active{
     @apply max-w-[40rem] py-3;
-  } */
+  }
 }

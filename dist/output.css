@@ -808,13 +808,17 @@ img{
   color: rgb(1 133 66 / var(--tw-text-opacity));
 }
 
-/* .faqs__question{
-    @apply hidden mx-auto;
-  }
+.faqs__question{
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+}
 
-  .faqs__question.active{
-    @apply max-w-[40rem] py-3;
-  } */
+.faqs__question.active{
+  max-width: 40rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
 
 .transition{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
