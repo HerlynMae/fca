@@ -25,7 +25,7 @@
   }
 
   body {
-    @apply font-poppins leading-6 h-[2000px];
+    @apply font-poppins leading-6;
   }
 
   ul {
@@ -99,7 +99,7 @@
   }
 
   .faqs__info ul li {
-    @apply text-2xl mb-2;
+    @apply text-[1.5rem] mb-3;
   }
 
   .faqs__content {
@@ -107,7 +107,7 @@
   }
 
   .faqs__content h5 {
-    @apply text-[2rem] mb-10 font-normal;
+    @apply text-[1.5rem] mb-10 font-normal;
   }
 
   .faqs__tab__content {
@@ -159,5 +159,148 @@
   }
   .faqs__link.active a {
     @apply text-green;
+  }
+
+  /* SERVICES */
+
+  .service__banner {
+    @apply py-10;
+  }
+
+  .service__banner h1 {
+    @apply text-7xl font-thin text-center my-[7rem];
+  }
+
+  .service__banner h4 {
+    @apply text-2xl mb-5 font-semibold;
+  }
+
+  .service__description {
+    @apply grid grid-cols-[_2fr,_1fr];
+  }
+
+  .service__info p {
+    @apply text-justify mb-6 text-[1.2rem];
+  }
+
+  /* SERVICES ACTIVITIES */
+
+  .service__item {
+    @apply flex gap-20 bg-gray mb-5 p-5;
+  }
+
+  .service__item img {
+    @apply w-[277px] h-[346px] object-cover;
+  }
+
+  .service__content {
+    @apply flex flex-col justify-center;
+  }
+
+  .service__content h4 {
+    @apply text-[1.7rem] text-green mb-6;
+  }
+
+  .service__content i {
+    @apply mr-3;
+  }
+
+  .service__content p {
+    @apply text-[1.2rem];
+  }
+
+  /* CALL TO ACTION */
+
+  .cta {
+    @apply py-[10rem];
+  }
+
+  .cta__wrapper {
+    @apply text-center;
+  }
+
+  .cta__wrapper h2 {
+    @apply text-[2.2rem] text-green mb-10;
+  }
+
+  .cta__wrapper p {
+    @apply max-w-[50rem] mx-auto text-[1.3rem] mb-10;
+  }
+
+  .cta__wrapper button {
+    @apply py-2 px-8 bg-yellow rounded-lg text-[1.2rem] text-light;
+  }
+
+  /* footer */
+
+  .footer {
+    @apply py-10 bg-gray;
+  }
+
+  .footer__wrapper {
+    @apply grid grid-cols-3 gap-[10rem];
+  }
+
+  .footer__wrapper img {
+    @apply h-[70px];
+  }
+
+  .footer__links {
+    @apply grid grid-cols-3 gap-4;
+  }
+
+  .footer__links__items p {
+    @apply font-bold text-[1.2rem] mb-2;
+  }
+
+  .footer__buttons {
+    @apply flex flex-col;
+  }
+
+  .footer__buttons button:first-child {
+    @apply bg-green hover:bg-yellow text-light py-2 px-2 w-[10rem] mb-4  rounded-lg;
+  }
+
+  .footer__buttons button:last-child {
+    @apply bg-light border border-green hover:bg-yellow w-[10rem] py-2 px-2 text-dark hover:text-light   rounded-lg;
+  }
+
+  .footer__below {
+    @apply border-t-[3px]  border-darkgray mt-4 flex justify-between pt-4;
+  }
+
+  .footer__below span {
+    @apply text-[1rem] text-darkgray;
+  }
+
+  .footer__below small {
+    @apply text-darkgray;
+  }
+
+  .footer__below i {
+    @apply ml-4 text-[1.4rem];
+  }
+
+  /* ABOUT US */
+
+  .about {
+    @apply py-10;
+  }
+
+  .about__wrapper h1 {
+    @apply text-7xl text-center font-normal;
+  }
+
+  /* front page */
+  .banner {
+    @apply flex py-20 items-center;
+  }
+
+  .frontpage__content__wrapper {
+    @apply grid grid-cols-2;
+  }
+
+  .frontpage__content img {
+    @apply w-[200px] h-[200px];
   }
 }
